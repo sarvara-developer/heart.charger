@@ -1,0 +1,61 @@
+.battery-top{
+    width: 30px;
+    height: 10px;
+    background: black;
+    margin: 0 auto;
+    border: 3px solid silver;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+.battery-content{
+    /* background-image: url(./mother-png-41514.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    width: 150px;
+    height: 250px;
+    background-color: black;
+    position: relative;
+    margin: 0 auto;
+    border-radius: 18px;
+
+}
+.charge{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    border-radius: 14px;
+    animation: battery 8s linear infinite;
+}
+
+.heart{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+@keyframes battery{
+    0%{
+        height: 0%;
+        background: rgb(227, 112, 202);
+    }
+    25%{
+        height: 25%;
+        background: rgb(237, 92, 167);
+    }
+    50%{
+        height: 50%;
+        background: rgb(212, 22, 161);
+    }
+    75%{
+        height: 75%;
+        background: rgb(222, 30, 30);
+    }
+    100%{
+        height: 100%;
+        background: rgb(179, 4, 4);
+    }
+}
